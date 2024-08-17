@@ -20,4 +20,4 @@ public class NewBehaviourScript : MonoBehaviour
         Debug.Log(Input.GetAxisRaw("Horizontal"));
 		myRigidbody.velocity =  new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")) * speed; 
 	}
-}
+} //making random change here to just see how github desktop works

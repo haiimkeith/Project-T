@@ -11,16 +11,16 @@ namespace Assets.DataTypes
         public int InventorySize;
         public List<Weapon> WeaponsEquipped;
         public List<Ability> Abilities;
+        public static List<Ability> startingAbilities;
+        public static Weapon startingWeapon;
 
-        Player(string type, int maxHealth, float baseSpeed, string name = "Hero", List<Weapon> weapons = new List<Weapon> { startingWeapon }, List<Ability> abilities = new List<Ability>{ startingAbilities }) 
+        Player(string type, int maxHealth, float baseSpeed, string name, List<Weapon> weapons, List<Ability> abilities) 
             : base(type, maxHealth, baseSpeed, name)
         {
-            InventorySize = inventorySize;
+            InventorySize = 64;
             WeaponsEquipped = weapons;
             Abilities = abilities;
         }
 
-        public static List<Ability> startingAbilities;
-        public static Weapon startingWeapon;
     }
 }

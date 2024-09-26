@@ -16,7 +16,7 @@ namespace Assets.DataTypes
         public int Health;
         public float Speed;
 
-        public Unit(string type, int maxHealth, float baseSpeed, string name = string.empty)
+        public Unit(string type, int maxHealth, float baseSpeed, string name = "")
         {
             Type = type;
             MaxHealth = maxHealth;
